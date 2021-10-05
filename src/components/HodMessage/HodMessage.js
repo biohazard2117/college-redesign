@@ -11,7 +11,7 @@ function HodMessage() {
           <div id={style["welcome"]}>
             <h1>WELCOME MESSAGE FROM HEAD OF THE DEPARTMENT</h1>
           </div>
-          <div className={style.contaier1}>
+          <div className={style.container1}>
             <div className={style.photo}>
               <img src={hod_image} alt="" />
               <div className={style.name}>
