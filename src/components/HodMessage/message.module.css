@@ -6,13 +6,15 @@
   background-color: #292f51;
   color: white;
   height: 700px;
-  padding-left: 135px;
+  width: auto;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .container1 {
+  width: auto;
   display: flex;
+  justify-content: center;
 }
 
 #welcome {
