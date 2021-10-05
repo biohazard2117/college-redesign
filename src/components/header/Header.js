@@ -1,7 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
-import "./header.css";
+import style from "./header.module.css";
 import logo from "./logo.png";
 
 function Header() {
@@ -13,9 +13,9 @@ function Header() {
       />
       <body>
         <header>
-          <div className="navbar">
-            <div className="navbar1">
-              <nav id="nav1">
+          <div className={style.navbar}>
+            <div className={style.navbar1}>
+              <nav id={style.nav1}>
                 <ul>
                   <li>
                     <a href="/">ACADEMICS</a>
@@ -35,19 +35,23 @@ function Header() {
                 </ul>
                 <ul>
                   <li>
-                    <FaEnvelope className="fa fa-envelope" />
+                    <FaEnvelope
+                      className={`${style["fa"]} ${style["fa-envelope"]}`}
+                    />
                     headjkinstitute@gmail.com
                   </li>
                   <li>
-                    <FaPhone className="fa fa-phone" />
+                    <FaPhone
+                      className={`${style["fa"]} ${style["fa-phone"]}`}
+                    />
                     +91-9470311972
                   </li>
                 </ul>
               </nav>
             </div>
-            <hr className="nav-divider"></hr>
-            <nav id="nav2">
-              <span className="logo">
+            <hr className={style["nav-divider"]}></hr>
+            <nav id={style["nav2"]}>
+              <span className={style["logo"]}>
                 <img src={logo} alt="Institute_Logo" />
                 <span>
                   <strong>
@@ -94,7 +98,7 @@ function Header() {
               </ul>
             </nav>
           </div>
-          <div className="ethics_excellence">
+          <div className={style["ethics_excellence"]}>
             <h3>IN PURUSUIT OF</h3>
             <h1>Ethics & Excellence</h1>
             <hr />
